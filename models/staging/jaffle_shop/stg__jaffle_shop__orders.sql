@@ -3,4 +3,4 @@
         customer as customer_id,
         ordered_at as order_date
 
-    from JAFFLE_SHOP.RAW.RAW_ORDERS
+    from {{ source('jaffle_shop', 'raw_orders') }}
